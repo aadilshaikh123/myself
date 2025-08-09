@@ -13,9 +13,21 @@ npm install
 ```
 
 ### 3. Run Locally
+
+**For Windows:**
+```bash
+# Option 1: Use the batch file
+dev.bat
+
+# Option 2: Use npx directly
+npx cross-env NODE_ENV=development tsx server/index.ts
+```
+
+**For Mac/Linux:**
 ```bash
 npm run dev
 ```
+
 - Opens at `http://localhost:5000`
 - Hot reload enabled for development
 
