@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 0%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(195, 100%, 56%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(262, 83%, 58%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --accent: hsl(195, 100%, 56%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 62%, 56%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 10%);
+  --ring: hsl(195, 100%, 56%);
+  --neural-cyan: hsl(195, 100%, 56%);
+  --neural-purple: hsl(262, 83%, 58%);
+  --glass-bg: hsla(0, 0%, 100%, 0.05);
+  --glass-border: hsla(0, 0%, 100%, 0.1);
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 0%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(195, 100%, 56%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(262, 83%, 58%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --accent: hsl(195, 100%, 56%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 62%, 56%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 10%);
+  --ring: hsl(195, 100%, 56%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-poppins);
+    background: #000000;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+  }
+
+  .neural-network-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .neural-network-canvas canvas {
+    pointer-events: auto;
+  }
+
+  .content-overlay {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+  }
+
+  .gradient-text {
+    background: linear-gradient(45deg, var(--neural-cyan), var(--neural-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .skill-progress {
+    background: linear-gradient(90deg, var(--neural-cyan), var(--neural-purple));
+    height: 4px;
+    border-radius: 2px;
+    transition: width 1s ease-in-out;
+  }
+
+  .pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
+
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+
+  .text-neural-cyan {
+    color: var(--neural-cyan);
+  }
+
+  .text-neural-purple {
+    color: var(--neural-purple);
+  }
+
+  .bg-neural-cyan {
+    background-color: var(--neural-cyan);
+  }
+
+  .bg-neural-purple {
+    background-color: var(--neural-purple);
+  }
+
+  .border-neural-cyan {
+    border-color: var(--neural-cyan);
+  }
+
+  .border-neural-purple {
+    border-color: var(--neural-purple);
+  }
+}
