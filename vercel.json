@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "npm run build:client",
-  "outputDirectory": "client/dist",
+  "outputDirectory": "dist/public",
   "routes": [
     {
       "src": "/(.*)",
