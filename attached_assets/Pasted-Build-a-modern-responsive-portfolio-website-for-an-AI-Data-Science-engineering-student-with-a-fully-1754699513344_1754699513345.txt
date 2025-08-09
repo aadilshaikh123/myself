@@ -1,0 +1,33 @@
+Build a modern, responsive portfolio website for an AI/Data Science engineering student with a fully interactive neural network background, referencing the style and sparsity from the attached images ![image2](image2), ![image1](image1), ![image3](image3), and ![image4](image4).
+
+### **Background/Canvas Requirements**
+- The background must be pure black (#000000), covering the entire viewport.
+- Populate the background with multiple, sparse neural network graphs distributed across and overlapping the whole page, closely matching the structure, node density, and visual style in the reference images.
+- Each network is made from small, glowing star-like nodes (white or subtle blue/cyan, 2–6px diameter) and thin, semi-transparent lines. Node color and line color should reference the images: white or neon blue/cyan (#00D9FF/#7C3AED).
+- The network should look slightly 3D, with some depth and soft blur/glow, as in ![image2](image2) and ![image1](image1).
+- Networks must be sparse—not every node is connected to every other—just like the images.
+- Distribute these networks unevenly, with clusters, chains, and some emptier areas for a natural, organic effect.
+
+### **Interactivity**
+- Networks that is collections of those nodes are draggable: the user can click/tap and smoothly drag any node.
+- When networks are dragged close to other networks (within 80–120px), they collide and have physics so they collide n rebound.
+-They have automated movement they continuously move in the background within the screen
+- All movements and transitions must be normal speed and smooth. .
+- Nodes gently pulse and glow (opacity change, box-shadow or blur) with a slow animation.
+- The canvas should be performant and responsive—handle mouse/touch events smoothly, and optimize for up to 100–150 nodes across the viewport.
+
+### **Portfolio Content**
+- All portfolio sections (navbar, hero, about, skills, projects, experience, education, contact) should be in floating, semi-transparent cards (glassmorphism or dark-translucent backgrounds) above the neural network background.
+- The background and network must remain visible and interactive at all times, even when scrolling or resizing.
+- Content cards must not block interaction with the background—use pointer-events: none on the canvas except for nodes, or ensure only nodes are interactable.
+- Use clean, modern geometric fonts (Roboto, Poppins, or Montserrat) and a calm, minimal color palette.
+
+### **Implementation Details**
+- Use vanilla JS or a performant canvas library (e.g., p5.js, three.js, or PixiJS) for the background.
+- Responsive design: the background adapts to all screen sizes; touch support required for node dragging on mobile.
+- Use requestAnimationFrame for smooth animation.
+- All code must be clean, modular, and well-commented.
+- Provide placeholder content for all portfolio sections that an AI/Data Science engineering student would have.
+
+### **Summary**
+The main goal is a calm, meditative, interactive neural network “starfield” background inspired by ![image2](image2), ![image1](image1), ![image3](image3), and ![image4](image4), with slow, sparse, draggable, and connectable nodes that form and break lines dynamically as described above.
