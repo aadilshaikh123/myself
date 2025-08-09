@@ -131,7 +131,7 @@ export default function Portfolio() {
       <nav className="fixed top-0 w-full z-50 p-6">
         <div className="glass-card p-4 mx-auto max-w-6xl">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-bold gradient-text font-poppins">Alex Chen</div>
+            <div className="text-xl font-bold gradient-text font-poppins">Aadilnawaz Shaikh</div>
             <div className="hidden md:flex space-x-8">
               {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact'].map((item) => (
                 <button
