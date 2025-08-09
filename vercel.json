@@ -1,11 +1,5 @@
 {
-  "version": 2,
-  "buildCommand": "npm run build:client",
-  "outputDirectory": "dist/public",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+  "buildCommand": "npm run build && cp -r dist/public/* dist/",
+  "outputDirectory": "dist",
+  "installCommand": "npm install"
 }
