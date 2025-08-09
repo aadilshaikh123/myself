@@ -188,7 +188,7 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://drive.google.com/file/d/1kUNpNY85u_h82HxfIDGp-hzpR289YzjE/view?usp=sharing" 
+                  src="client/src/components/pfp.jpg" 
                   alt="Aadilnawaz Shaikh - AI Data Science Engineer" 
                   className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
                 />
