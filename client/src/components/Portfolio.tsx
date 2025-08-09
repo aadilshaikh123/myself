@@ -171,7 +171,7 @@ export default function Portfolio() {
               View My Work
             </Button>
             <Button 
-              onClick={() => window.open('Aadilnawaz_DS_resume.pdf', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1ztX7DPTWWS0QUePHlNW0-b3nhx4lrny3/view?usp=sharing', '_blank')}
               className="glass-card px-8 py-4 hover:bg-neural-purple hover:bg-opacity-20 transition-all bg-transparent border-0"
             >
               Download Resume
@@ -188,8 +188,8 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800" 
-                  alt="Alex Chen - AI Data Science Engineer" 
+                  src="https://drive.google.com/file/d/1kUNpNY85u_h82HxfIDGp-hzpR289YzjE/view?usp=sharing" 
+                  alt="Aadilnawaz Shaikh - AI Data Science Engineer" 
                   className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
                 />
               </div>
@@ -210,8 +210,8 @@ export default function Portfolio() {
                     <div className="text-sm text-gray-400 font-montserrat">Projects Completed</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-neural-purple font-poppins">3.8</div>
-                    <div className="text-sm text-gray-400 font-montserrat">GPA</div>
+                    <div className="text-2xl font-bold text-neural-purple font-poppins">8.6</div>
+                    <div className="text-sm text-gray-400 font-montserrat">CGPA</div>
                   </div>
                 </div>
               </div>
