@@ -157,7 +157,7 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-24">
         <div className="glass-card p-12 max-w-4xl mx-auto text-center float-animation">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 glow-text font-poppins">Alex Chen</h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 glow-text font-poppins">Aadilnawaz Shaikh</h1>
           <h2 className="text-2xl md:text-3xl font-light mb-8 gradient-text font-roboto">AI & Data Science Engineer</h2>
           <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto font-montserrat">
             Passionate about transforming data into intelligent solutions. Specialized in machine learning, 
@@ -171,7 +171,7 @@ export default function Portfolio() {
               View My Work
             </Button>
             <Button 
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('Aadilnawaz_DS_resume.pdf', '_blank')}
               className="glass-card px-8 py-4 hover:bg-neural-purple hover:bg-opacity-20 transition-all bg-transparent border-0"
             >
               Download Resume
